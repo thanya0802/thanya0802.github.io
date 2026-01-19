@@ -11,18 +11,23 @@ export const Home = () => {
       <section id="home" className="home">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> {meta.title}</title>
+          <title>{meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center ">
+
+        <div className="intro_sec d-block d-lg-flex align-items-center">
+          {/* IMAGE */}
           <div
-            className="h_bg-image order-1 order-lg-2 h-100 "
+            className="h_bg-image order-1 order-lg-2 h-100"
             style={{ backgroundImage: `url(${introdata.your_img_url})` }}
           ></div>
+
+          {/* TEXT */}
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
-            <div className="align-self-center ">
+            <div className="align-self-center">
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
+
                 <h1 className="fluidz-48 mb-1x">
                   <Typewriter
                     options={{
@@ -37,25 +42,47 @@ export const Home = () => {
                     }}
                   />
                 </h1>
+
                 <p className="mb-1x">{introdata.description}</p>
+
+                {/* ===== BUTTONS ===== */}
                 <div className="intro_btn-action pb-5">
+                  {/* PRIMARY CTA */}
                   <Link to="/portfolio" className="text_2">
-                    <div id="button_p" className="ac_btn btn ">
+                    <div id="button_p" className="ac_btn btn">
                       My Portfolio
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
-                      Contact Me
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
-                    </div>
-                  </Link>
+
+                  {/* SECONDARY CTAs */}
+                  <div className="btn-row">
+                    <Link to="/contact">
+                      <div id="button_h" className="ac_btn btn">
+                        Contact Me
+                        <div className="ring one"></div>
+                        <div className="ring two"></div>
+                        <div className="ring three"></div>
+                      </div>
+                    </Link>
+
+                    <a
+                      href="/Thanya_Resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div id="button_r" className="ac_btn btn">
+                        View Resume
+                        <div className="ring one"></div>
+                        <div className="ring two"></div>
+                        <div className="ring three"></div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+                {/* ===== END BUTTONS ===== */}
               </div>
             </div>
           </div>
