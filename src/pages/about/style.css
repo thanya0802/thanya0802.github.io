@@ -32,22 +32,29 @@
   padding-left: 12px;
 }
 
-/* Body text */
-.body-text {
+/* Shared body/supporting text */
+.body-text,
+.focus-list li,
+.timeline-org,
+.timeline-date {
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--text-color);
+}
+
+.body-text {
   white-space: pre-line;
 }
 
 /* Research focus list */
 .focus-list {
-  padding-left: 1.2rem;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .focus-list li {
   margin-bottom: 0.6rem;
-  line-height: 1.6;
 }
 
 /* Timeline */
@@ -58,18 +65,20 @@
 }
 
 .timeline-item h4 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
+  line-height: 1.8;
   margin-bottom: 0.2rem;
 }
 
 .timeline-org {
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   margin-bottom: 0.2rem;
 }
 
 .timeline-date {
-  font-size: 0.85rem;
+  font-size: 0.96rem;
+  margin-bottom: 0.2rem;
 }
 
 /* Skills */

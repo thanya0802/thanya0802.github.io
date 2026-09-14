@@ -25,70 +25,77 @@ const introdata = {
 const dataabout = {
   title: "Academic & Professional Profile",
   aboutme:
-    "I am a Master of Science student in Data Science at Northeastern University’s Khoury College of Computer Sciences, with an expected graduation in May 2026. I hold a strong foundation in Computer Science and specialize in Machine Learning, Deep Learning, Natural Language Processing, and Large Language Models. My experience spans academic research, teaching, and industry, including building scalable data pipelines, developing retrieval-augmented generation systems, and deploying production-grade machine learning models. My interests focus on designing robust, interpretable AI systems with real-world impact.",
+    "I build AI systems and the evaluation frameworks that make them reliable.\n\nMy work spans generative AI, LLMs, agentic systems, applied NLP, machine learning, and AI evaluation — with a focus on taking intelligent systems from model and architecture decisions through integration, testing, and practical deployment.\n\nCurrently, I work as an AI Developer Intern at Saturn Tech, contributing to a multi-tenant AI recruitment platform and developing and validating LLM-powered candidate screening and voice AI interview workflows. My work also involves testing and debugging end-to-end AI workflows across frontend, backend APIs, integrations, and asynchronous processing.\n\nMy research at Northeastern University has focused on applied NLP and language models. For clinical dialogue-to-note generation, I fine-tuned Mistral-7B with QLoRA and built a four-stage generation pipeline combining entity conditioning, retrieval, generation, and verification. The system ranked 1st at SMM4H-HeaRD 2026 and was published in the ACL 2026 workshop proceedings.\n\nBeyond research, I build AI systems centered on orchestration and evaluation, including a GraphRAG-based enterprise knowledge orchestrator, a vision-grounded computer-use agent with task and action-grounding evaluation, and an automated presentation-generation agent with factual-grounding and quality evaluation.\n\nMy broader machine-learning work spans clinical decision support, survival analysis, NLP, customer analytics, risk modeling, and interpretable ML. Across these projects, I am particularly interested in a recurring question: not just whether an AI system can generate an output, but whether that output can be evaluated, traced, and trusted.",
 };
 
 /* ================= RESEARCH FOCUS ================= */
 
- const researchFocus = [
-  "Machine learning and deep learning systems for real-world deployment",
-  "Large language models, NLP pipelines, and retrieval-augmented generation",
-  "Anomaly detection, model interpretability, and AI reliability",
-  "Scalable data engineering and ML infrastructure on cloud platforms",
+const researchFocus = [
+  "Generative AI, LLMs, agentic systems, and evaluation for reliable deployment",
+  "Applied NLP, clinical language models, and structured generation pipelines",
+  "Retrieval, orchestration, and GraphRAG for decision-support systems",
+  "Interpretable ML, clinical analytics, and trustworthy AI for real-world use",
 ];
 
 /* ================= EXPERIENCE ================= */
 
 const experience = [
   {
-    role: "Research Assistant — Dialogue-to-Note Generation for Clinical Documentation",
-    org: "Northeastern University",
-    period: "Sep 2025 – Present",
+    role: "AI Developer Intern",
+    org: "Saturn Tech",
+    period: "Jul 2026 – Present",
     points: [
-      "Applied NLP and LLM-based techniques to convert doctor–patient dialogues into SOAP-format clinical notes, supporting automated clinical documentation",
-      "Experimented with prompt design and NLP-based information extraction to improve factual accuracy and section relevance in generated notes",
-      "Evaluated LLM-generated clinical notes for hallucinations, omissions, and logical consistency, supporting reliability analysis in healthcare NLP research",
+      "Contribute to a multi-tenant AI recruitment platform supporting candidate, job, pipeline, and AI-enabled recruitment workflows.",
+      "Develop and validate LLM-powered candidate screening and voice AI interview workflows across automated recruitment stages.",
+      "Test and debug end-to-end AI workflows across frontend, backend APIs, integrations, and asynchronous processing to validate reliable application behavior.",
     ],
   },
   {
-    role: "Research Assistant — LLM-Based Depression Cause Analysis from Twitter Data",
+    role: "Research Assistant: Clinical NLP",
     org: "Northeastern University",
-    period: "Sep 2025 – Present",
+    period: "Jan 2026 – Apr 2026",
+    publication: "https://aclanthology.org/2026.smm4h-1.17/",
     points: [
-      "Created a Twitter API–based pipeline to collect and preprocess 15,000+ mental-health–related tweets for depression analysis",
-      "Designed an NLP classification pipeline using RoBERTa to detect depression-related tweets and LLaMA 3.3 70B for multi-label cause classification across social, economic, and psychological factors",
-      "Applied BERTopic to extract latent themes beyond predefined categories and analyze patterns in community-level mental-health discourse",
+      "Applied NLP and LLM-based techniques to convert doctor–patient dialogues into SOAP-format clinical notes, supporting automated clinical documentation.",
+      "Fine-tuned Mistral-7B with QLoRA and built a four-stage generation pipeline combining entity conditioning, retrieval, generation, and verification.",
+      "Ranked 1st at SMM4H-HeaRD 2026 and published the work in the ACL 2026 workshop proceedings.",
     ],
   },
   {
-    role: "Head Teaching Assistant — Intermediate Python Programming for Data Science",
+    role: "Research Assistant: Social Media NLP",
     org: "Northeastern University",
-    period: "Sep 2025 – Present",
+    period: "Sep 2025 – Dec 2025",
     points: [
-      "Managed and mentored 15 TAs, coordinating grading, labs, and office hours for 260+ students on Python OOP, debugging, and machine learning concepts",
-      "Monitored grading of assignments, quizzes, and online discussions on classification, clustering, regression, and algorithmic problem solving, cutting query backlog by 30%",
-      "Guided students and TAs in applying ML workflows including data preprocessing, model training, and evaluation, improving average student project scores by 15%",
+      "Created a Twitter API–based pipeline to collect and preprocess mental-health–related social media content for depression analysis.",
+      "Designed an NLP classification pipeline using RoBERTa to detect depression-related posts and LLaMA 3.3 70B for multi-label cause classification.",
+      "Applied BERTopic to extract latent themes and analyze patterns in community-level mental-health discourse.",
     ],
   },
   {
-    role: "Teaching Assistant — Python Programming for Data Science",
+    role: "Head Teaching Assistant: Intermediate Python Programming for Data Science",
+    org: "Northeastern University",
+    period: "Sep 2025 – Apr 2026",
+    points: [
+      "Led course operations across grading, labs, office hours, and student support, coordinating the TA team around Python OOP, debugging, and applied machine learning concepts.",
+      "Improved instructional workflows across assignments, quizzes, and online discussions while supporting classification, clustering, regression, and algorithmic problem-solving.",
+    ],
+  },
+  {
+    role: "Teaching Assistant: Python Programming for Data Science",
     org: "Northeastern University",
     period: "May 2025 – Jun 2025",
     points: [
-      "Mentored 60+ students in Python, NumPy, pandas and matplotlib during office hours and review sessions, resolving 20+ weekly queries on debugging, data analysis and visualization",
-      "Graded 100+ assignments and co-designed labs and quizzes, contributing to a 15% increase in average student performance",
-      "Guided students through implementing data preprocessing, feature engineering, and EDA on real-world datasets",
+      "Guided students through Python, NumPy, pandas, and matplotlib during office hours and review sessions, with emphasis on debugging, data analysis, and visualization.",
+      "Evaluated programming assignments and contributed to labs and quizzes designed to reinforce Python fundamentals and applied problem-solving.",
     ],
   },
   {
     role: "Data Science Intern",
-    org: "66 Degrees",
+    org: "66degrees",
     period: "Jul 2023 – Feb 2024",
     points: [
-      "Analyzed customer and marketing datasets using Python, SQL, BigQuery, and Snowflake on GCP, reducing manual analysis time by ~25%",
-      "Contributed to customer segmentation and churn prediction models using BigQuery ML and Python, improving campaign targeting effectiveness by ~20%",
-      "Built and maintained Looker dashboards on BigQuery to track churn rate, segment distribution, and campaign performance for weekly stakeholder reviews",
-      "Collaborated with senior team members to review data workflows and model evaluation metrics, reducing recurring reporting effort by ~10 hours/week",
+      "Built customer analytics workflows across Python, SQL, BigQuery, Snowflake, and GCP to streamline recurring marketing analysis and reporting.",
+      "Applied customer segmentation, churn modeling, and SHAP-based explainability to identify behavioral patterns and support more targeted retention strategies.",
     ],
   },
   {
@@ -96,29 +103,8 @@ const experience = [
     org: "Omnisimple",
     period: "Oct 2022 – Nov 2022",
     points: [
-      "Cleaned and analyzed 100,000+ transaction records using Python, SQL, AWS S3, and EC2 to identify spending patterns and customer behavior segments",
-      "Developed a logistic regression model to predict loan repayment delays using Python, achieving ~87% accuracy and supporting follow-up prioritization",
-      "Contributed to a collaborative filtering–based recommendation prototype for financial products, supporting personalization experiments that improved conversion metrics by ~9%",
-    ],
-  },
-  {
-    role: "Machine Learning Engineer",
-    org: "Varcons Technologies",
-    period: "Aug 2022 – Sep 2022",
-    points: [
-      "Preprocessed and analyzed 10,000+ customer reviews and social posts using Python and NLP techniques, enabling structured sentiment modeling",
-      "Built and compared sentiment classification models using TF-IDF, Word2Vec, SVM, and Naive Bayes, improving baseline model accuracy by ~12%",
-      "Evaluated model outputs and sentiment distributions to derive marketing insights on brand perception and customer sentiment trends",
-    ],
-  },
-  {
-    role: "AI Engineer Intern",
-    org: "Smartknower",
-    period: "Jun 2022 – Jul 2022",
-    points: [
-      "Implemented computer vision preprocessing pipelines using OpenCV for gesture and handwritten digit (0–9) recognition, improving input image quality and consistency",
-      "Trained and evaluated CNN-based classifiers using TensorFlow and Keras on labeled image datasets, achieving ~90% classification accuracy",
-      "Integrated trained models into a real-time prediction demo, enabling sub-second inference and instant visual feedback during live testing",
+      "Engineered and analyzed transaction-level features to uncover spending patterns, customer behavior, and signals relevant to repayment risk.",
+      "Developed a logistic regression workflow for repayment-delay prediction and translated model outputs into customer follow-up prioritization.",
     ],
   },
 ];
@@ -130,87 +116,87 @@ const skillsGrouped = [
     category: "Languages",
     items: [
       "Python",
-      "R",
-      "C++",
-      "Java",
-      "JavaScript",
       "SQL",
-      "Bash / Shell Scripting",
+      "JavaScript",
+      "TypeScript",
     ],
   },
   {
-    category: "Data Science & Machine Learning",
+    category: "Generative AI & LLMs",
+    items: [
+      "Mistral",
+      "BioMistral",
+      "LLaMA",
+      "Gemini",
+      "OpenRouter",
+      "Retell AI",
+      "QLoRA",
+      "Unsloth",
+      "vLLM",
+    ],
+  },
+  {
+    category: "AI Systems & Agents",
+    items: [
+      "RAG",
+      "GraphRAG",
+      "LangGraph",
+      "MCP",
+      "A2A",
+      "FAISS",
+      "Neo4j",
+    ],
+  },
+  {
+    category: "Machine Learning & NLP",
     items: [
       "PyTorch",
-      "TensorFlow",
-      "Keras",
+      "Hugging Face",
       "scikit-learn",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Seaborn",
+      "XGBoost",
+      "SHAP",
+      "BERTopic",
+      "GLiNER",
     ],
   },
   {
-    category: "Distributed Data Processing",
+    category: "Applications & APIs",
     items: [
-      "Apache Spark",
-      "PySpark",
-    ],
-  },
-  {
-    category: "Data Platforms & Visualization",
-    items: [
-      "BigQuery",
-      "BigQuery ML",
-      "Snowflake",
-      "Looker",
-      "Tableau",
-      "Power BI",
+      "React",
+      "Express",
+      "FastAPI",
+      "Flask",
       "Streamlit",
-      "Plotly",
     ],
   },
   {
-    category: "Systems & MLOps",
+    category: "Data & Cloud",
+    items: [
+      "PostgreSQL",
+      "MongoDB",
+      "BigQuery",
+      "Snowflake",
+      "GCP",
+      "Vertex AI",
+    ],
+  },
+  {
+    category: "MLOps & Engineering",
     items: [
       "Docker",
       "Kubernetes",
-      "Apache Airflow",
       "GitHub Actions",
-      "FastAPI",
+      "CI/CD",
+      "pytest",
     ],
   },
   {
-    category: "Generative AI & NLP",
+    category: "Analytics & Visualization",
     items: [
-      "Large Language Models (LLMs)",
-      "Retrieval-Augmented Generation (RAG)",
-      "Agentic AI",
-      "LangGraph",
-      "Qdrant",
-      "Vector Databases",
-      "Healthcare NLP",
-    ],
-  },
-  {
-    category: "Cloud & Infrastructure",
-    items: [
-      "Google Cloud Platform (GCP)",
-      "Cloud Run",
-      "Vertex AI",
-      "AWS EC2",
-      "AWS S3",
-      "AWS CloudWatch",
-      "AWS SageMaker",
-    ],
-  },
-  {
-    category: "Productivity Tools",
-    items: [
-      "Microsoft Word",
-      "Excel",
-      "PowerPoint",
+      "pandas",
+      "NumPy",
+      "Looker",
+      "Matplotlib",
     ],
   },
 ];
@@ -222,9 +208,9 @@ const dataportfolio = [
     title: "Breast Cancer Risk Modelling & Clinical Decision Support",
     summary:
       "Machine learning models for benign vs malignant tumor prediction with risk stratification and interpretability for clinical decision support.",
-    date: "Jan 2026 – Present",
+    date: "Jan 2026 – Apr 2026",
     img: require("./assets/images/projects/breast_cancer.jpg"),
-    link: "#", // add repo later if public
+    link: "https://github.com/thanya0802/Capstone_Cancer_Prediction", 
   },
   {
     title: "Automated Due Diligence & Market Intelligence Agent",
@@ -264,10 +250,10 @@ const dataportfolio = [
 /* ================= CONTACT ================= */
 
 const contactConfig = {
-  YOUR_EMAIL: "mysoresanthosh.th@northeastern.edu",
+  YOUR_EMAIL: "msthanya8@gmail.com",
   YOUR_FONE: "(857) 339-8544",
   description:
-    "I'm always open to discussing research collaborations, data science opportunities, or impactful AI projects. Feel free to reach out.",
+    "I'm open to opportunities and collaborations in AI engineering, generative AI, agentic systems, evaluation, and applied machine learning. Feel free to reach out.",
   WEB3FORMS_KEY: "c0dd2f65-96e7-4854-b5f8-cc262e5db2b4",
 };
 

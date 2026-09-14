@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
+import { introdata, meta, socialprofils } from "../../content_option";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -15,75 +14,84 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
 
-        <div className="intro_sec d-block d-lg-flex align-items-center">
-          {/* IMAGE */}
-          <div
-            className="h_bg-image order-1 order-lg-2 h-100"
-            style={{ backgroundImage: `url(${introdata.your_img_url})` }}
-          ></div>
-
-          {/* TEXT */}
-          <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
-            <div className="align-self-center">
-              <div className="intro mx-auto">
-                <h2 className="mb-1x">{introdata.title}</h2>
-
-                <h1 className="fluidz-48 mb-1x">
-                  <Typewriter
-                    options={{
-                      strings: [
-                        introdata.animated.first,
-                        introdata.animated.second,
-                        introdata.animated.third,
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      deleteSpeed: 10,
-                    }}
-                  />
-                </h1>
-
-                <p className="mb-1x">{introdata.description}</p>
-
-                {/* ===== BUTTONS ===== */}
-                <div className="intro_btn-action pb-5">
-                  {/* PRIMARY CTA */}
-                  <Link to="/portfolio" className="text_2">
-                    <div id="button_p" className="ac_btn btn">
-                      My Portfolio
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
-                    </div>
-                  </Link>
-
-                  {/* SECONDARY CTAs */}
-                  <div className="btn-row">
-                    <Link to="/contact">
-                      <div id="button_h" className="ac_btn btn">
-                        Contact Me
-                        <div className="ring one"></div>
-                        <div className="ring two"></div>
-                        <div className="ring three"></div>
-                      </div>
-                    </Link>
-
-                    <a
-                      href="/Thanya_Resume.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div id="button_r" className="ac_btn btn">
-                        View Resume
-                        <div className="ring one"></div>
-                        <div className="ring two"></div>
-                        <div className="ring three"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                {/* ===== END BUTTONS ===== */}
+        <div className="home-inner">
+          {/* ================= HERO ================= */}
+          <div className="hero-shell">
+            {/* LEFT CONTENT */}
+            <div className="hero-copy">
+              <div className="hero-eyebrow">
+                Generative AI · LLMs · Agentic Systems · Evaluation
               </div>
+
+              <h1 className="hero-name">
+                Thanya
+                <br />
+                Mysore
+                <br />
+                Santhosh
+              </h1>
+
+              <p className="hero-role">
+                I build AI systems and the{" "}
+                <span className="no-break">evaluation harnesses</span>{" "}
+                that prove they work.
+              </p>
+
+              <p className="hero-description">
+                AI Engineer with an MS in Data Science from Northeastern
+                University, working across LLMs, RAG, agentic systems, and AI
+                evaluation. My clinical NLP research ranked 1st on the
+                SMM4H-HeaRD 2026 leaderboard and was published at ACL 2026.
+              </p>
+
+              <div className="hero-actions">
+                <Link
+                  to="/portfolio"
+                  className="hero-btn hero-btn-primary"
+                >
+                  View Portfolio
+                  <span>↗</span>
+                </Link>
+
+                <a
+                  href="/Thanya_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-btn"
+                >
+                  Resume
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href={socialprofils.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-btn"
+                >
+                  GitHub
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href={socialprofils.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-btn"
+                >
+                  LinkedIn
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+
+            {/* RIGHT PORTRAIT */}
+            <div className="hero-photo-wrap">
+              <img
+                src={introdata.your_img_url}
+                alt="Thanya Mysore Santhosh"
+                className="hero-photo"
+              />
             </div>
           </div>
         </div>
