@@ -54,7 +54,7 @@ export const Home = () => {
                 </Link>
 
                 <a
-                  href="/Thanya_Resume.pdf"
+                  href="/Thanya_Resume.pdf?v=20260914"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hero-btn"
