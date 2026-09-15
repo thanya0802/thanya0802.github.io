@@ -75,18 +75,18 @@ const selectedProjects = [
       "Enterprise knowledge is scattered across structured and unstructured sources, making reliable retrieval and synthesis difficult.",
 
     system:
-      "Built a multi-agent knowledge orchestration system using GraphRAG, Neo4j, and Gemini via Vertex AI, coordinated through MCP and A2A protocols.",
+      "Built a multi-agent RAG system using MCP, combining ChromaDB vector search with NetworkX-based knowledge graph traversal for multi-hop retrieval and reasoning.",
 
     reliability:
       "Integrated PII detection and full audit logging to support enterprise-safe, traceable AI outputs.",
 
     tags: [
-      "GraphRAG",
-      "Neo4j",
-      "Gemini",
-      "Vertex AI",
       "MCP",
-      "A2A",
+      "ChromaDB",
+      "NetworkX",
+      "GraphRAG",
+      "PII Detection",
+      "GitHub Actions",
     ],
 
     liveLink:
