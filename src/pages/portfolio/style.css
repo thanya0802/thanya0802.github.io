@@ -3225,6 +3225,7 @@ img.architecture-image {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 18px;
   margin-bottom: 2.2rem;
 }
 

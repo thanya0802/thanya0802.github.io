@@ -80,6 +80,15 @@ const selectedProjects = [
     reliability:
       "Integrated PII detection and full audit logging to support enterprise-safe, traceable AI outputs.",
 
+    tags: [
+      "GraphRAG",
+      "Neo4j",
+      "Gemini",
+      "Vertex AI",
+      "MCP",
+      "A2A",
+    ],
+
     liveLink:
       "https://enterprise-orchestrator-mcp-rz3hd3jvxeumfm2dw7yxuv.streamlit.app/",
 
@@ -99,7 +108,16 @@ const selectedProjects = [
     "Built a computer-use agent implementing a perceive → plan → act loop over a synthetic multi-screen environment, with a Streamlit dashboard and CLI benchmark runner.",
 
   reliability:
-    "Measured task success rate and per-step action-grounding accuracy with pytest and GitHub Actions CI. Built automated tests around task success, action grounding, state transitions, and reproducibility using pytest and GitHub Actions CI.",
+    "Found 35–57% UI grounding error in gpt-4o-mini and replaced visual coordinate estimation with DOM-based grounding, achieving 100% task success across 5 verified live-site runs.",
+
+  tags: [
+    "OpenAI",
+    "Playwright",
+    "FastAPI",
+    "Streamlit",
+    "pytest",
+    "GitHub Actions",
+  ],
 
   github:
     "https://github.com/thanya0802/screen-agent-eval",
@@ -117,7 +135,12 @@ const selectedProjects = [
     "Built an agent that converts structured JSON and CSV inputs into fully rendered PowerPoint presentations using python-pptx.",
 
   reliability:
-    "Designed an evaluation harness for factual grounding, narrative consistency, and visual quality, including checks for unsupported numerical claims.",
+    "Built grounding and quality checks, diagnosed PowerPoint file corruption through before/after repair comparison, and eliminated it using fresh matplotlib-rendered chart images.",
+
+  tags: [
+    "python-pptx",
+    "Matplotlib",
+  ],
 
   github:
     "https://github.com/thanya0802/deck-agent-eval",
@@ -136,6 +159,15 @@ const selectedProjects = [
 
   reliability:
     "Integrated bias and hallucination checks against a golden dataset into CI/CD evaluation gates, with quality thresholds for deployment validation.",
+
+  tags: [
+    "LangGraph",
+    "RAG",
+    "FastAPI",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+  ],
 
   github:
     "https://github.com/thanya0802/Automated-Due-Diligence-Market-Intelligence-Agent-MLOps"
@@ -456,6 +488,14 @@ return (
                 </p>
               </div>
             </div>
+
+            {project.tags && project.tags.length > 0 && (
+              <div className="project-tags">
+                {project.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
+            )}
 
             {/* ================= LINKS ================= */}
 

@@ -25,13 +25,13 @@ const introdata = {
 const dataabout = {
   title: "Academic & Professional Profile",
   aboutme:
-    "I build AI systems and the evaluation frameworks that make them reliable.\n\nMy work spans generative AI, LLMs, agentic systems, applied NLP, machine learning, and AI evaluation — with a focus on taking intelligent systems from model and architecture decisions through integration, testing, and practical deployment.\n\nCurrently, I work as an AI Developer Intern at Saturn Tech, contributing to a multi-tenant AI recruitment platform and developing and validating LLM-powered candidate screening and voice AI interview workflows. My work also involves testing and debugging end-to-end AI workflows across frontend, backend APIs, integrations, and asynchronous processing.\n\nMy research at Northeastern University has focused on applied NLP and language models. For clinical dialogue-to-note generation, I fine-tuned Mistral-7B with QLoRA and built a four-stage generation pipeline combining entity conditioning, retrieval, generation, and verification. The system ranked 1st at SMM4H-HeaRD 2026 and was published in the ACL 2026 workshop proceedings.\n\nBeyond research, I build AI systems centered on orchestration and evaluation, including a GraphRAG-based enterprise knowledge orchestrator, a vision-grounded computer-use agent with task and action-grounding evaluation, and an automated presentation-generation agent with factual-grounding and quality evaluation.\n\nMy broader machine-learning work spans clinical decision support, survival analysis, NLP, customer analytics, risk modeling, and interpretable ML. Across these projects, I am particularly interested in a recurring question: not just whether an AI system can generate an output, but whether that output can be evaluated, traced, and trusted.",
+    "I build AI systems and the evaluation frameworks that make them reliable.\n\nMy work spans generative AI, LLMs, agentic systems, applied NLP, machine learning, and AI evaluation — with a focus on taking intelligent systems from model and architecture decisions through integration, testing, and practical deployment.\n\nCurrently, I work as an AI Developer Intern at Saturn Tech, contributing to a multi-tenant AI recruitment platform and developing and validating LLM-powered candidate screening and voice AI interview workflows. My work also involves testing and debugging end-to-end AI workflows across frontend, backend APIs, integrations, and asynchronous processing.\n\nMy research at Northeastern University has focused on applied NLP and language models. For clinical dialogue-to-note generation, I fine-tuned Mistral-7B with QLoRA and built a four-stage generation pipeline combining entity conditioning, retrieval, generation, and verification. The system ranked 1st at SMM4H-HeaRD 2026 and was published in the ACL 2026 workshop proceedings.\n\nBeyond research, I build AI systems centered on orchestration, evaluation, and reliability, including a GraphRAG-based enterprise knowledge orchestrator, a vision-grounded computer-use agent where I evaluated and improved UI grounding through DOM-based element localization and real-world browser validation, and an automated presentation-generation agent with factual-grounding, narrative-consistency, visual-quality, and output-integrity checks.\n\nMy broader machine-learning work spans clinical decision support, survival analysis, NLP, customer analytics, risk modeling, and interpretable ML. Across these projects, I am particularly interested in a recurring question: not just whether an AI system can generate an output, but whether that output can be evaluated, traced, and trusted.",
 };
 
 /* ================= RESEARCH FOCUS ================= */
 
 const researchFocus = [
-  "Generative AI, LLMs, agentic systems, and evaluation for reliable deployment",
+  "Generative AI, LLMs, agentic systems, grounding, and evaluation for reliable deployment",
   "Applied NLP, clinical language models, and structured generation pipelines",
   "Retrieval, orchestration, and GraphRAG for decision-support systems",
   "Interpretable ML, clinical analytics, and trustworthy AI for real-world use",
@@ -128,6 +128,7 @@ const skillsGrouped = [
       "BioMistral",
       "LLaMA",
       "Gemini",
+      "OpenAI",
       "OpenRouter",
       "Retell AI",
       "QLoRA",
@@ -167,6 +168,7 @@ const skillsGrouped = [
       "FastAPI",
       "Flask",
       "Streamlit",
+      "Playwright",
     ],
   },
   {
