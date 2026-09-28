@@ -205,20 +205,20 @@ const getExperienceMetrics = (item) => {
   const role = item.role.toLowerCase();
   const org = item.org.toLowerCase();
 
-  if (role.includes("data science intern")) {
-    if (org.includes("66")) {
-      return [
-        { value: "25%", label: "Faster Analysis" },
-        { value: "20%", label: "Better Targeting" },
-        { value: "10 hrs/week", label: "Saved Reporting" },
-      ];
-    }
+  if (role.includes("data scientist") && org.includes("66")) {
+    return [
+      { value: "0.85", label: "Best ROC-AUC" },
+      { value: "35%", label: "Less Data-Prep Time" },
+      { value: "40%", label: "Less Manual Reporting" },
+    ];
+  }
 
+  if (role.includes("data science intern")) {
     if (org.includes("omnisimple")) {
       return [
-        { value: "100,000+", label: "Transactions" },
-        { value: "87%", label: "Model Accuracy" },
-        { value: "9%", label: "Conversion Lift" },
+        { value: "100K+", label: "Financial Records" },
+        { value: "0.86", label: "Best ROC-AUC" },
+        { value: "18%", label: "Fewer False Negatives" },
       ];
     }
   }
