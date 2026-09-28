@@ -20,7 +20,7 @@ export const Home = () => {
             {/* LEFT CONTENT */}
             <div className="hero-copy">
               <div className="hero-eyebrow">
-                Generative AI · LLMs · Agentic Systems · Evaluation
+                Generative AI · LLMs · RAG · Agentic Systems · Evaluation
               </div>
 
               <h1 className="hero-name">
@@ -38,10 +38,11 @@ export const Home = () => {
               </p>
 
               <p className="hero-description">
-                AI Engineer with an MS in Data Science from Northeastern
-                University, working across LLMs, RAG, agentic systems, and AI
-                evaluation. My clinical NLP research ranked 1st on the
-                SMM4H-HeaRD 2026 leaderboard and was published at ACL 2026.
+                Applied AI Engineer with an MS in Data Science from Northeastern
+                University, working across Generative AI, LLMs, RAG, agentic
+                systems, and AI evaluation. My clinical NLP work ranked 1st on
+                the SMM4H-HeaRD 2026 international shared-task leaderboard and
+                was published at the ACL 2026 SMM4H-HeaRD Workshop.
               </p>
 
               <div className="hero-actions">
