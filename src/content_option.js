@@ -25,7 +25,7 @@ const introdata = {
 const dataabout = {
   title: "Academic & Professional Profile",
   aboutme:
-    "I build AI systems and the evaluation frameworks that make them reliable.\n\nMy work spans generative AI, LLMs, agentic systems, applied NLP, machine learning, and AI evaluation — with a focus on taking intelligent systems from model and architecture decisions through integration, testing, and practical deployment.\n\nCurrently, I work as an AI Developer Intern at Saturn Tech, contributing to a multi-tenant AI recruitment platform and developing and validating LLM-powered candidate screening and voice AI interview workflows. My work also involves testing and debugging end-to-end AI workflows across frontend, backend APIs, integrations, and asynchronous processing.\n\nMy research at Northeastern University has focused on applied NLP and language models. For clinical dialogue-to-note generation, I fine-tuned Mistral-7B with QLoRA and built a four-stage generation pipeline combining entity conditioning, retrieval, generation, and verification. The system ranked 1st at SMM4H-HeaRD 2026 and was published in the ACL 2026 workshop proceedings.\n\nBeyond research, I build AI systems centered on orchestration, evaluation, and reliability, including a GraphRAG-based enterprise knowledge orchestrator, a vision-grounded computer-use agent where I evaluated and improved UI grounding through DOM-based element localization and real-world browser validation, and an automated presentation-generation agent with factual-grounding, narrative-consistency, visual-quality, and output-integrity checks.\n\nMy broader machine-learning work spans clinical decision support, survival analysis, NLP, customer analytics, risk modeling, and interpretable ML. Across these projects, I am particularly interested in a recurring question: not just whether an AI system can generate an output, but whether that output can be evaluated, traced, and trusted.",
+    "I build AI systems and the evaluation frameworks that make them reliable.\n\nMy work spans generative AI, LLMs, agentic systems, applied NLP, machine learning, and AI evaluation — with a focus on taking intelligent systems from model and architecture decisions through integration, testing, and practical deployment.\n\nCurrently, I work as an AI Engineer at Saturn Tech, contributing to a multi-tenant AI recruitment platform spanning LLM-powered candidate screening, voice AI interviews, and end-to-end recruitment workflows. I also work directly with leadership and recruiters to gather requirements, translate business needs into technical features, and validate reliable application behavior across frontend, backend APIs, integrations, and asynchronous processing.\n\nMy research at Northeastern University has focused on applied NLP and language models. For clinical dialogue-to-note generation, I fine-tuned Mistral-7B with QLoRA and built a four-stage generation pipeline combining entity conditioning, retrieval, generation, and verification. The system ranked 1st at SMM4H-HeaRD 2026 and was published in the ACL 2026 workshop proceedings.\n\nBeyond research, I build AI systems centered on orchestration, evaluation, and reliability, including a GraphRAG-based enterprise knowledge orchestrator, a vision-grounded computer-use agent where I evaluated and improved UI grounding through DOM-based element localization and real-world browser validation, and an automated presentation-generation agent with factual-grounding, narrative-consistency, visual-quality, and output-integrity checks.\n\nMy broader machine-learning work spans clinical decision support, survival analysis, NLP, customer analytics, risk modeling, and interpretable ML. Across these projects, I am particularly interested in a recurring question: not just whether an AI system can generate an output, but whether that output can be evaluated, traced, and trusted.",
 };
 
 /* ================= RESEARCH FOCUS ================= */
@@ -41,11 +41,12 @@ const researchFocus = [
 
 const experience = [
   {
-    role: "AI Developer Intern",
+    role: "AI Engineer",
     org: "Saturn Tech",
     period: "Jul 2026 – Present",
     points: [
       "Contribute to a multi-tenant AI recruitment platform supporting candidate, job, pipeline, and AI-enabled recruitment workflows.",
+      "Collaborate directly with leadership and recruiters to gather requirements, understand end-to-end recruitment workflows, and translate business needs into technical features.",
       "Develop and validate LLM-powered candidate screening and voice AI interview workflows across automated recruitment stages.",
       "Test and debug end-to-end AI workflows across frontend, backend APIs, integrations, and asynchronous processing to validate reliable application behavior.",
     ],
@@ -90,21 +91,25 @@ const experience = [
     ],
   },
   {
-    role: "Data Science Intern",
+    role: "Data Scientist",
     org: "66degrees",
-    period: "Jul 2023 – Feb 2024",
+    period: "May 2023 – Jul 2024",
     points: [
-      "Built customer analytics workflows across Python, SQL, BigQuery, Snowflake, and GCP to streamline recurring marketing analysis and reporting.",
-      "Applied customer segmentation, churn modeling, and SHAP-based explainability to identify behavioral patterns and support more targeted retention strategies.",
+      "Developed and tuned customer-churn models using XGBoost, Random Forest, and Logistic Regression, improving ROC-AUC from 0.78 to 0.85 through behavioral feature engineering and hyperparameter optimization.",
+      "Built reusable SQL-based feature datasets from 10+ customer, transaction, and engagement sources in BigQuery and Snowflake, reducing recurring data-preparation time by approximately 35%.",
+      "Applied customer segmentation and SHAP-based explainability to identify high-value, inactive, and at-risk cohorts and surface key churn drivers.",
+      "Partnered directly with client stakeholders and cross-functional teams to gather requirements, present findings, and translate retention challenges into data-science solutions.",
     ],
   },
   {
     role: "Data Science Intern",
     org: "Omnisimple",
-    period: "Oct 2022 – Nov 2022",
+    period: "Jan 2022 – May 2023",
     points: [
-      "Engineered and analyzed transaction-level features to uncover spending patterns, customer behavior, and signals relevant to repayment risk.",
-      "Developed a logistic regression workflow for repayment-delay prediction and translated model outputs into customer follow-up prioritization.",
+      "Developed an end-to-end credit-risk modeling workflow across 100K+ financial records, covering data preparation, feature engineering, model training, and validation.",
+      "Trained and benchmarked Logistic Regression, Random Forest, and XGBoost classifiers, achieving a best ROC-AUC of 0.86 and improving F1-score by 12% over the initial baseline.",
+      "Tuned classification thresholds using precision-recall analysis, reducing false negatives for high-risk applicants by 18% while monitoring the effect on creditworthy applicants.",
+      "Participated in technical reviews with data science and business teams, communicating model performance, risk patterns, and implementation limitations.",
     ],
   },
 ];
@@ -143,9 +148,10 @@ const skillsGrouped = [
       "GraphRAG",
       "LangGraph",
       "MCP",
-      "A2A",
+      "ChromaDB",
+      "Qdrant",
       "FAISS",
-      "Neo4j",
+      "NetworkX",
     ],
   },
   {
